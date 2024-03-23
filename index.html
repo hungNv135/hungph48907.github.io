@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignment</title>
+    <link rel="stylesheet" href="css.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="bar">
+                <div class="logo"><a href="#">Cuisine</a></div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="index.html" class="action-btn">Get Started</a>
+                <div class="toggle-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="dropdown_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>   
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" class="action-btn">Get Started</a></li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="banner-item">
+            <h1>Cuisine - A place to connect with love</h1><br>
+            Cuisine is a bridge of love, connecting people through delicious food and warm sharing moments.
+        </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/c286ff085c.js" crossorigin="anonymous"></script>
+
+    <nav>
+        <div class="box">
+            <div class="box-item">
+                <img src="Images/pho-bo.jpg" alt="Ảnh">
+                <div class="content">
+                    <h1><a href="about.html">Beef pho</a></h1><br>
+                    Beef pho, the quintessence of Vietnamese cuisine, is a spiritual gift for diners.
+                    The rich, sweet broth from stewed bones blends with soft, chewy pho noodles and fragrant beef,
+                    creating an unforgettable flavor.
+                    Herbs, chili lime, and elegant bean sprouts add to the dish.
+                    Beef pho is not only delicious but also contains cultural value, a symbol of togetherness and
+                    cohesion                    
+                </div>
+            </div>
+            <div class="box-item">
+                <img src="Images/banh-trang.jpg" alt="Ảnh">
+                <div class="content">
+                    <h1><a href="about.html">Banh trang</a></h1><br>
+                    Banh trang, a rustic dish associated with the childhood of many Vietnamese people.
+                    The thin, chewy crust is made from rice flour and coated in a hot pan, giving it a rustic, simple
+                    flavor.
+                    Banh trang can be eaten with many different dishes, from boiled meat, raw vegetables to rolls such
+                    as spring rolls and spring rolls.                 
+                </div>
+            </div>
+            <div class="box-item">
+                <img src="Images/banh-mi.jpg" alt="Ảnh">
+                <div class="content">
+                    <h1><a href="about.html">Banh mi</a></h1><br>
+                    Banh mi, Vietnam's famous street food, is a symphony of flavors.
+                    Crispy crust, filled with fragrant grilled meat, fatty pate, cool herbs with cucumber, pickles, and
+                    hot chili.
+                    Each sandwich is a colorful picture, providing a unique culinary experience.                   
+                </div>
+            </div>
+        </div>
+
+        <div class="mid">
+            <h1>Enjoy the cuisine</h1><br>
+            It's not just about eating and drinking, but also a journey to discover the culture, 
+            history and people of the place we visit. Each dish carries its own story, containing
+            the unique characteristics of the region, expressed through cooking methods, ingredients
+            and typical flavors.
+        </div>
+
+        <div class="box">
+            <div class="box-item">
+                <img src="Images/banh-xeo.jpg" alt="Ảnh">
+                <div class="content">
+                    <h1><a href="about.html">Banh xeo</a></h1><br>
+                    Banh xeo, a famous Vietnamese delicacy, is a golden, crispy symphony that evokes all senses.
+                    The thin crust of the cake, embracing the filling of minced meat, fresh shrimp, bean sprouts and
+                    herbs, blends with the fatty taste of coconut milk, creating an irresistible appeal. 
+                </div>
+            </div>
+            <div class="box-item">
+                <img src="Images/goi-cuon.jpg" alt="Ảnh">
+                <div class="content">
+                    <h1><a href="about.html">Spring rolls</a></h1><br>
+                    Spring rolls, a refreshing, colorful dish, are a gift from Vietnam.
+                    The thin rice paper holds the filling of pork, fresh shrimp, raw vegetables, and vermicelli,
+                    creating a harmonious, elegant flavor.
+                    The sweet and sour and spicy dipping sauce adds to the appeal of the dish.              
+                </div>
+            </div>
+            <div class="box-item">
+                <img src="Images/sushi.jpg" alt="Ảnh">
+                <div class="content">
+                    <h1><a href="about.html">Sushi</a></h1><br>
+                    Sushi, a world-famous Japanese dish, is a delicate symphony of flavors.
+                    Fragrant rice mixed with vinegar envelops the fresh seafood filling, mixed with the spicy taste of
+                    wasabi and the sweetness of ginger.
+                    Each sushi roll is a work of art, providing a unique culinary experience.                 
+                </div>
+            </div>
+        </div>
+
+        <div class="mid">
+            <h1>Thank you for taking the time to read about my sharing about enjoying food.</h1><br>
+            Hopefully this information will help you discover more about the colorful and rich culinary world, while also igniting your passion for cooking and enjoying delicious food.
+        </div>
+    </nav>
+
+    <footer>
+        <div class="end">
+            Copy@2024 - Nguyễn Văn Hưng - PH48907
+        </div>
+    </footer>
+</body>
+
+</html>
